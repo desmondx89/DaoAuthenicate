@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>Sample Springboot Security Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+  </head>
+
+  <body>
+
+
+	<h1 style="text-align:center">
+	
+	<span>  Welcome to SpringBoot Security </span>
+	<br>
+	
+    Welcome <b><span sec:authentication="name">Username</span></b>
+     <br>  <br>
+     <a th:href="@{/testaop}"> Test the AoP </a>
+     <br>
+     <a th:href="@{/}"> Back to main </a>
+     <br>
+     <a th:href="@{/logout-success}"> logout </a>
+
+   </h1>
+  
+
+  </body>
+
+</html>
